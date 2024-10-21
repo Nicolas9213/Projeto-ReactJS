@@ -10,9 +10,9 @@ export default function Repositorio({ match }) {
     const [loading, setLoading] = useState(true);
     const [page, setPage] = useState(1);
     const [filters, setFilters] = useState([
-        { state: 'all', label: 'Todas', active: true },
-        { state: 'open', label: 'Abertas', active: false },
-        { state: 'closed', label: 'Fechadas', active: false },
+        { state: 'all', label: 'Todao', active: true },
+        { state: 'open', label: 'Abertos', active: false },
+        { state: 'closed', label: 'Fechados', active: false },
     ]);
     const [filterIndex, setFilterIndex] = useState(0);
 
@@ -95,6 +95,7 @@ export default function Repositorio({ match }) {
                     </button>
                 ))}
             </Filter>
+
             <IssuesList>
                 {issues.map(issue => (
                     <li key={String(issue.id)}>

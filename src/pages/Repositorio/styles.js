@@ -129,17 +129,14 @@ export const PageActions = styled.div`
 `;
 
 export const Filter = styled.div`
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    margin:  15px 0;
 
     button {
+        margin: 0 3px;
         border: 0;
-        padding: 5px 10px;
+        padding: 8px;
         border-radius: 4px;
-        color: #fff;
         outline: 0;
-        background: #222;
 
         &:nth-child(${props => props.active + 1}) {
             background: #0071db;
